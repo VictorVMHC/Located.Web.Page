@@ -1,9 +1,19 @@
 import React from 'react';
 
 const DownloadButton: React.FC = () => {
+
+    const downloadImage = () => {
+        console.log("hola");
+        
+            const imagenURL = "./public/manager.apk";
+            const enlace = document.createElement('a');
+            enlace.href = imagenURL;
+            enlace.download = 'manager.apk';
+            enlace.click();
+    }
     return (
-        <a href="..\assets\react.svg" download >
-            <button style={{width: 200}}>DownLoad APK</button>
+        <a download >
+            <button onClick={() => downloadImage() }>DownLoad Located APK</button>
         </a>
     );
 };
