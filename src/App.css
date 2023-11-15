@@ -59,3 +59,11 @@ button:hover {
   text-align: center;
   max-width: 100%; /* Ajustar el ancho máximo del botón de descarga */
 }
+
+.carousel-image {
+  max-height: 50vh;; /* Puedes ajustar este valor según tu necesidad */
+  max-width: 100%; /* Ajusta este valor si quieres que las imágenes no excedan el ancho del contenedor */
+  display: block;
+  margin: 0 auto; /* Centrar la imagen horizontalmente */
+  object-fit: contain; /*/* Centrar la imagen */
+}
