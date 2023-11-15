@@ -3,12 +3,10 @@ import React from 'react';
 const DownloadButton: React.FC = () => {
 
     const downloadImage = () => {
-        console.log("hola");
-        
-            const imagenURL = "./public/manager.apk";
+            const imagenURL = "./public/LocatedApp.apk";
             const enlace = document.createElement('a');
             enlace.href = imagenURL;
-            enlace.download = 'manager.apk';
+            enlace.download = 'LocatedApp.apk';
             enlace.click();
     }
     return (
